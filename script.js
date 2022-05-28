@@ -131,13 +131,8 @@ window.onclick = function(event) {
       if(e.which == 13){
           var msgvalued=msginp.value;
         var dbref=collection(db,channelid)
+        handleEnter(uname,msginp.value,msginp);
         
-        setDoc(doc(db, channelid, Math.round(Math.random()*10000000000).toString()), {
-          sender:uname,
-          msg:msgvalued,
-          time:Date.now()
-        })
-          msginp.value=''
       }})
 })
 function getStartOfToday() {
@@ -227,4 +222,13 @@ console.log(q234.docs.length)
      
      
      myEventsQ.push = function() { Array.prototype.push.apply(this, arguments);  processQ(arguments);};
+async function handleEnter(uname,msgvalued,msginp){
+await setDoc(doc(db, channelid, Math.round(Math.random()*10000000000).toString()), {
+          sender:uname,
+          msg:msgvalued,
+          time:Date.now()
+        })
+          msginp.value=''
+
+}
      
