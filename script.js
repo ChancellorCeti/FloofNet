@@ -136,6 +136,7 @@ window.onclick = function(event) {
           msg:msginp.value,
           time:Date.now()
         })
+          msginp.value='
       }})
 })
 function getStartOfToday() {
