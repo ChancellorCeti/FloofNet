@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div id="loading">
+    <center><h1 id="loadh">Welcome to the FloofNet, the number one platform for socializing on the internet!</h1></center>
+    <div class="ring">Loading
+        <span id="spann"></span>
+      </div>
+    </div>
+    <div id="mainc">
+       
+        <center>
+        <h1>Welcome to FloofNet, please enter a name and channel you wish to join.</h1>
+        <input id="name" placeholder="Enter a name..."><br>
+        
+        <input id="channel" placeholder="Enter a channel id..."><br>
+        <button class="cybr-btn" id="namesel">
+            Enter<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">FloofNet_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button>
+    </center>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script>
+        function openNav(){
+      
+      document.getElementById("mySidenav").style.width = "250px";
+    
+   }
+   function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+    </script>
+</body>
+</html>
