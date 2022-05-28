@@ -129,7 +129,7 @@ window.onclick = function(event) {
     $(document).on("keypress", "input", function(e){
         
       if(e.which == 13){
-          msginp.value=''
+          
         var dbref=collection(db,channelid)
         
         setDoc(doc(db, channelid, Math.round(Math.random()*10000000000).toString()), {
@@ -137,7 +137,7 @@ window.onclick = function(event) {
           msg:msginp.value,
           time:Date.now()
         })
-          
+          msginp.value=''
       }})
 })
 function getStartOfToday() {
